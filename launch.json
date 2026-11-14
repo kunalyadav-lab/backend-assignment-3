@@ -1,0 +1,28 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Start Server (npm start)",
+      "program": "${workspaceFolder}/server.js",
+      "restart": true,
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Run Test Suite (npm test)",
+      "program": "${workspaceFolder}/test/api-test.js",
+      "console": "integratedTerminal"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Seed Database (npm run seed)",
+      "program": "${workspaceFolder}/src/seed/seedData.js",
+      "console": "integratedTerminal"
+    }
+  ]
+}
